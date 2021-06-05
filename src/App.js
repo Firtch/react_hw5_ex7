@@ -29,6 +29,10 @@ class App extends React.Component {
      this.setState({ class: className});
   }
 
+  static getDerivedStateFromProps() {
+    console.log("getDerivedStateFromProps");
+  }
+
   render() {
     console.log("render");
     return (<div className="App">
